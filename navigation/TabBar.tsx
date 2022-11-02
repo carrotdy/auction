@@ -13,8 +13,8 @@ export const TabBar = ({ state, navigation }) => {
     const {
         home,
         homeActive,
-        auction,
-        auctionActive,
+        map,
+        mapActive,
         interest,
         interestActive,
         myPage,
@@ -25,13 +25,13 @@ export const TabBar = ({ state, navigation }) => {
         if (name === '홈') {
             if (!focused) return home;
             return homeActive;
-        } else if (name === '매물') {
-            if (!focused) return auction
-            return auctionActive;
+        } else if (name === '지도') {
+            if (!focused) return map
+            return mapActive;
         } else if (name === '내관심') {
             if (!focused) return interest
             return interestActive;
-        } else if (name === '내정보') {
+        } else if (name === '마이페이지') {
             if (!focused) return myPage
             return myPageActive;
         }
